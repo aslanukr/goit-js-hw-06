@@ -6,6 +6,6 @@ nameInputEl.addEventListener("input", (event) => {
   if (event.target.value === "") {
     nameOutputEl.textContent = "Anonymous";
   } else {
-    nameOutputEl.textContent = event.target.value;
+    nameOutputEl.textContent = event.target.value.trim();
   }
 });
