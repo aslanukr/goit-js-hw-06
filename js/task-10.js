@@ -15,7 +15,7 @@ function handleCreateBtn() {
   for (let i = 0; i < inputAmountEl.value; i += 1) {
     let boxColor = getRandomHexColor();
     let boxSize = i * 10 + basicBoxSize;
-    const boxMarkup = `<div style="background:${boxColor}; width:${boxSize}px; height:${boxSize}px" > </div>`;
+    const boxMarkup = `<div style="background:${boxColor}; width:${boxSize}px; height:${boxSize}px; margin: 0 auto" > </div>`;
     boxesEl.insertAdjacentHTML("beforeend", boxMarkup);
   }
 }
